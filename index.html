@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
+    </head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name</label><br/>
+        <input type="text" id="name" placeholder="Enter your name" required><br/>
+        <label for="email" id="email-label">Email</label><br/>
+        <input type="email" id="email" placeholder="Enter your Email" required><br/>
+        <label for="number" id="number-label">Age (optional)</label><br/>
+        <input type="number" value="age" min="1" max="100" id="number" pattern="[0-9]{2}" placeholder="Age"><br/>
+        <label for="gender">Gender</label><br/>
+        <select name="gender" id="dropdown">
+            <option disabled selected>Sex</option>
+            <option value="male" >Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br/>
+        <label >Would you recommend FCC to your friends?</label><br/>
+        <label for="yes"><input type="radio" name="choice" id="yes" value="yes" class="iradio" checked>YES
+        </label><br/>
+        <label for="no"><input type="radio" name="choice" id="no" value="no" class="iradio">NO
+        </label><br/>
+        <label>What would you like to see improved? (Check all that apply)
+            <input type="checkbox" name="ch" id="1" value="Front-end projects" class="ichexbx">Front-end Projects<br/>
+            <input type="checkbox" name="ch" id="2" value="Back-end projects" class="ichexbx">Back-end Projects<br/>
+            <input type="checkbox" name="ch" id="3" value="Challenges" class="ichexbx">Challenges </label><br/>
+        <label for="comments">Any comments or suggestions?</label><br/>
+        <textarea name="comments" id="comment" cols="20" placeholder="Feedback Please..." style="height:100px; border-radius: 0%;"></textarea><br/>
+        <button id="submit">Submit</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
